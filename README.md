@@ -1,1 +1,1 @@
-content://ru.zdevs.zarchiver.external/storage/emulated/0/Download/sorteio_pix_site/sorteio_pix_site/index.html
+sorteio de Pix sera realiza dia 30 de dezembro pela site do sorteio o contemplado ser através do contato 98984773746 pelo idealizador 
