@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Sorteio Pix - Distribuição de Números</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #222;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .num {
+        padding: 10px;
+        background: #ffffff;
+        border-radius: 6px;
+        text-align: center;
+        cursor: pointer;
+        border: 2px solid #ddd;
+        font-weight: bold;
+        transition: .2s;
+    }
+    .num:hover {
+        background: #eee;
+    }
+    .taken {
+        background: #ff4d4d !important;
+        color: white;
+        border-color: #b30000;
+    }
+</style>
+</head>
+<body>
+
+<h1>Sorteio PIX - Distribuição dos Números</h1>
+
+<div class="grid" id="numbersGrid"></div>
+
+<script>
+// gerar os 1000 números
+const grid = document.getElementById("numbersGrid");
+for (let i = 1; i <= 1000; i++) {
+    let div = document.createElement("div");
+    div.className = "num";
+    div.innerText = i;
+
+    div.onclick = () => {
+        div.classList.toggle("taken");
+    };
+
+    grid.appendChild(div);
+}
+</script>
+
+</body>
+</html>
